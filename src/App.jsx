@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import React from 'react';
-import Header from './header'; // Adjust the path according to your file structure
-import List from './list'; // Adjust the path according to your file structure
+import Header from './header'; 
+import ProductList from './products'; 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* Other components */}
-      <List />
+      <ProductList />
     </div>
   );
 }
