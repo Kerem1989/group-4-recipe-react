@@ -9,7 +9,7 @@ export default function Hero() {
 Vill du ta matlagningen till nästa nivå? Bläddra ner för att hitta inspiration från våra kvalitetsrecept och ge dig själv en smakfull upplevelse!</p>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="assets/food.jpg" alt="mockup"></img>
+        <img src="/assets/food.jpg" alt="mockup" />
         </div>                
     </div>
 </section>
