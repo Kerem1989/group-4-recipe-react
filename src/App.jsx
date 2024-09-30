@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Recipes from "./components/recipes.jsx";
+import Recipes from "./components/Recipes.jsx";
 import Header from "./components/header.jsx"; 
 import Hero from "./components/hero.jsx";
 import Gradesite from "./components/gradesite.jsx"; 
