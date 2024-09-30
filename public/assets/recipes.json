@@ -1,0 +1,772 @@
+[
+  {
+    "title": "Toast Skagen",
+    "description": "Gott till champagne",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 15,
+    "price": 150,
+    "categories": [
+      "Förrätt",
+      "Skaldjur",
+      "Smaskigt"
+    ],
+    "instructions": [
+      "Stek brödet",
+      "Lägg på röran",
+      "Toppa med dill"
+    ],
+    "ingredients": [
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsk"
+      },
+      {
+        "name": "Peppar",
+        "amount": 1,
+        "unit": "tsk"
+      },
+      {
+        "name": "Smör",
+        "amount": 100,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Köttbullar",
+    "description": "Klassiska svenska köttbullar",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 45,
+    "price": 200,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda ingredienserna",
+      "Forma till bollar",
+      "Stek i panna"
+    ],
+    "ingredients": [
+      {
+        "name": "Köttfärs",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Ströbröd",
+        "amount": 1,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Gravad Lax",
+    "description": "Perfekt till midsommar",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 1440,
+    "price": 250,
+    "categories": [
+      "Förrätt",
+      "Fisk",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda socker och salt",
+      "Gnid in laxen",
+      "Låt stå i kylskåp i 24 timmar"
+    ],
+    "ingredients": [
+      {
+        "name": "Lax",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Socker",
+        "amount": 2,
+        "unit": "msk"
+      },
+      {
+        "name": "Salt",
+        "amount": 2,
+        "unit": "msk"
+      }
+    ]
+  },
+  {
+    "title": "Raggmunk",
+    "description": "Serveras med lingonsylt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 100,
+    "categories": [
+      "Huvudrätt",
+      "Vegetariskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Riv potatisen",
+      "Blanda med mjöl och mjölk",
+      "Stek i panna"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Mjöl",
+        "amount": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "Mjölk",
+        "amount": 2,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Ärtsoppa",
+    "description": "Traditionell torsdagsrätt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 120,
+    "price": 50,
+    "categories": [
+      "Huvudrätt",
+      "Soppa",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blötlägg ärtorna över natten",
+      "Koka ärtorna med fläsk",
+      "Smaka av med salt och peppar"
+    ],
+    "ingredients": [
+      {
+        "name": "Gula ärtor",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Rimmat fläsk",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Pyttipanna",
+    "description": "Enkel och snabb rätt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 20,
+    "price": 80,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Snabbmat"
+    ],
+    "instructions": [
+      "Tärna potatis och kött",
+      "Stek allt i panna",
+      "Servera med ägg och rödbetor"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Kött",
+        "amount": 300,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Janssons Frestelse",
+    "description": "Perfekt till julbordet",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 60,
+    "price": 150,
+    "categories": [
+      "Huvudrätt",
+      "Potatis",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Skiva potatis och lök",
+      "Varva med ansjovis i form",
+      "Grädda i ugn"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Ansjovis",
+        "amount": 1,
+        "unit": "burk"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Kroppkakor",
+    "description": "Fyllda potatisbullar",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 90,
+    "price": 120,
+    "categories": [
+      "Huvudrätt",
+      "Potatis",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Koka potatisen",
+      "Forma till bollar med fyllning",
+      "Koka i vatten"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Fläsk",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Kalops",
+    "description": "Mustig köttgryta",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 120,
+    "price": 180,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Bryn köttet",
+      "Tillsätt lök och morötter",
+      "Låt sjuda i buljong"
+    ],
+    "ingredients": [
+      {
+        "name": "Nötkött",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 2,
+        "unit": "st"
+      },
+      {
+        "name": "Morötter",
+        "amount": 3,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Rårakor",
+    "description": "Serveras med lingonsylt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 20,
+    "price": 50,
+    "categories": [
+      "Huvudrätt",
+      "Vegetariskt",
+      "Snabbmat"
+    ],
+    "instructions": [
+      "Riv potatisen",
+      "Stek i panna",
+      "Servera med lingonsylt"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "tsk"
+      },
+      {
+        "name": "Smör",
+        "amount": 50,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Sill och Potatis",
+    "description": "Klassisk svensk rätt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 100,
+    "categories": [
+      "Huvudrätt",
+      "Fisk",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Koka potatisen",
+      "Servera med sill och gräddfil",
+      "Toppa med gräslök"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Sill",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Gräddfil",
+        "amount": 2,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Fläskpannkaka",
+    "description": "Ugnspannkaka med fläsk",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 40,
+    "price": 80,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda smeten",
+      "Tillsätt fläsk",
+      "Grädda i ugn"
+    ],
+    "ingredients": [
+      {
+        "name": "Mjöl",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Mjölk",
+        "amount": 5,
+        "unit": "dl"
+      },
+      {
+        "name": "Fläsk",
+        "amount": 200,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Laxpudding",
+    "description": "Lax och potatis i ugn",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 60,
+    "price": 150,
+    "categories": [
+      "Huvudrätt",
+      "Fisk",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Skiva potatis och lax",
+      "Varva i form",
+      "Grädda i ugn"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lax",
+        "amount": 300,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Blodpudding",
+    "description": "Serveras med lingonsylt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 15,
+    "price": 50,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Snabbmat"
+    ],
+    "instructions": [
+      "Skiva blodpuddingen",
+      "Stek i panna",
+      "Servera med lingonsylt"
+    ],
+    "ingredients": [
+      {
+        "name": "Blodpudding",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Smör",
+        "amount": 50,
+        "unit": "gram"
+      },
+      {
+        "name": "Lingonsylt",
+        "amount": 2,
+        "unit": "msk"
+      }
+    ]
+  },
+  {
+    "title": "Falukorv i ugn",
+    "description": "Enkel och god rätt",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 100,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Snabbmat"
+    ],
+    "instructions": [
+      "Skiva falukorven",
+      "Lägg i ugnsform",
+      "Grädda i ugn"
+    ],
+    "ingredients": [
+      {
+        "name": "Falukorv",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Senap",
+        "amount": 2,
+        "unit": "msk"
+      },
+      {
+        "name": "Ost",
+        "amount": 100,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Kåldolmar",
+    "description": "Fyllda kålblad",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 90,
+    "price": 150,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Förväll kålbladen",
+      "Fyll med köttfärs",
+      "Grädda i ugn"
+    ],
+    "ingredients": [
+      {
+        "name": "Vitkål",
+        "amount": 1,
+        "unit": "huvud"
+      },
+      {
+        "name": "Köttfärs",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Stekt Strömming",
+    "description": "Serveras med potatismos",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 100,
+    "categories": [
+      "Huvudrätt",
+      "Fisk",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Panera strömmingen",
+      "Stek i panna",
+      "Servera med potatismos"
+    ],
+    "ingredients": [
+      {
+        "name": "Strömming",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Ströbröd",
+        "amount": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "Smör",
+        "amount": 50,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Äggakaka",
+    "description": "Skånsk pannkaka",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 80,
+    "categories": [
+      "Huvudrätt",
+      "Vegetariskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda smeten",
+      "Stek i panna",
+      "Servera med lingonsylt"
+    ],
+    "ingredients": [
+      {
+        "name": "Ägg",
+        "amount": 4,
+        "unit": "st"
+      },
+      {
+        "name": "Mjöl",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Mjölk",
+        "amount": 5,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Sjömansbiff",
+    "description": "Mustig köttgryta",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 120,
+    "price": 200,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Bryn köttet",
+      "Varva med potatis och lök",
+      "Låt sjuda i öl"
+    ],
+    "ingredients": [
+      {
+        "name": "Nötkött",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 2,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Renskav",
+    "description": "Serveras med potatismos",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 30,
+    "price": 150,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Stek renskaven",
+      "Tillsätt grädde",
+      "Servera med potatismos"
+    ],
+    "ingredients": [
+      {
+        "name": "Renskav",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Grädde",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Kroppkakor",
+    "description": "Fyllda potatisbullar",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 90,
+    "price": 120,
+    "categories": [
+      "Huvudrätt",
+      "Potatis",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Koka potatisen",
+      "Forma till bollar med fyllning",
+      "Koka i vatten"
+    ],
+    "ingredients": [
+      {
+        "name": "Potatis",
+        "amount": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "Fläsk",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Kalops",
+    "description": "Mustig köttgryta",
+    "ratings": [],
+    "imageUrl": "/assets/toast_skagen.jpg",
+    "timeInMins": 120,
+    "price": 180,
+    "categories": [
+      "Huvudrätt",
+      "Kött",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Bryn köttet",
+      "Tillsätt lök och morötter",
+      "Låt sjuda i buljong"
+    ],
+    "ingredients": [
+      {
+        "name": "Nötkött",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 2,
+        "unit": "st"
+      },
+      {
+        "name": "Morötter",
+        "amount": 3,
+        "unit": "st"
+      }
+    ]
+  }
+]
