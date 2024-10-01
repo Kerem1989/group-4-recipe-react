@@ -768,5 +768,356 @@
         "unit": "st"
       }
     ]
+  },
+  {
+    "title": "Glutenfria Crepes",
+    "description": "Fluffiga pannkakor gjorda med glutenfritt mjöl med valfri fyllning",
+    "ratings": [],
+    "imageUrl": "/assets/glutenfria_crepes.jpg",
+    "timeInMins": 30,
+    "price": 50,
+    "categories": [
+      "Förrätt",
+      "Glutenfritt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda de torra ingredienserna",
+      "Vispa ihop med mjölk och ägg",
+      "Stek i smör tills gyllenbruna"
+    ],
+    "ingredients": [
+      {
+        "name": "Glutenfri mjölmix",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Mjölk",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Ägg",
+        "amount": 1,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Glutenfri Pizza",
+    "description": "Pizza med glutenfri botten och valfri topping",
+    "ratings": [],
+    "imageUrl": "/assets/glutenfri_pizza.jpg",
+    "timeInMins": 60,
+    "price": 150,
+    "categories": [
+      "Huvudrätt",
+      "Glutenfritt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda glutenfri mjölmix och jäst",
+      "Tillsätt vatten och olja och knåda till en deg",
+      "Låt degen jäsa",
+      "Grädda pizzabotten och tillsätt topping"
+    ],
+    "ingredients": [
+      {
+        "name": "Glutenfri mjölmix",
+        "amount": 3,
+        "unit": "dl"
+      },
+      {
+        "name": "Jäst",
+        "amount": 1,
+        "unit": "pkt"
+      },
+      {
+        "name": "Mozzarella",
+        "amount": 200,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Glutenfria Kötbullar",
+    "description": "Klassiska svenska köttbullar utan gluten",
+    "ratings": [],
+    "imageUrl": "/assets/glutenfria_kotbullar.jpg",
+    "timeInMins": 45,
+    "price": 80,
+    "categories": [
+      "Huvudrätt",
+      "Glutenfritt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Blanda köttfärs, ägg och glutenfritt ströbröd",
+      "Forma små bollar",
+      "Stek i smör tills gyllenbruna"
+    ],
+    "ingredients": [
+      {
+        "name": "Nötfärs",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Ägg",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Glutenfritt ströbröd",
+        "amount": 1,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Glutenfri Lasagne",
+    "description": "En smakrik lasagne gjord med glutenfri pasta",
+    "ratings": [],
+    "imageUrl": "/assets/glutenfri_lasagne.jpg",
+    "timeInMins": 90,
+    "price": 200,
+    "categories": [
+      "Huvudrätt",
+      "Glutenfritt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Koka glutenfri lasagneplattor",
+      "Lägg varvvis plattor, köttfärssås och ostsås i en form",
+      "Grädda i ugnen tills gyllene"
+    ],
+    "ingredients": [
+      {
+        "name": "Glutenfria lasagneplattor",
+        "amount": 12,
+        "unit": "st"
+      },
+      {
+        "name": "Nötfärs",
+        "amount": 400,
+        "unit": "gram"
+      },
+      {
+        "name": "Tomatsås",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "title": " Vegoburger",
+    "description": "Hälsosam och god vegoburgare gjord på bönor och grönsaker",
+    "ratings": [],
+    "imageUrl": "/assets/vegoburgare.jpg",
+    "timeInMins": 40,
+    "price": 70,
+    "categories": [
+      "Huvudrätt",
+      "Vegetariskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Mosa bönor och blanda med grönsaker och kryddor",
+      "Forma till burgare och stek i olja",
+      "Servera i hamburgerbröd med valfria tillbehör"
+    ],
+    "ingredients": [
+      {
+        "name": "Svarta bönor",
+        "amount": 1,
+        "unit": "burk"
+      },
+      {
+        "name": "Paprika",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Hamburgerbröd",
+        "amount": 4,
+        "unit": "st"
+      }
+    ]
+  },
+  {
+    "title": "Svamprisotto",
+    "description": "Krämig risotto med svamp och parmesanost",
+    "ratings": [],
+    "imageUrl": "/assets/svamprisotto.jpg",
+    "timeInMins": 45,
+    "price": 120,
+    "categories": [
+      "Huvudrätt",
+      "Vegetariskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Fräs lök och ris i olja tills glansigt",
+      "Tillsätt buljong lite i taget och rör tills riset är mjukt",
+      "Rör ner parmesan och stekta svampar"
+    ],
+    "ingredients": [
+      {
+        "name": "Arborioris",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Svamp",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 50,
+        "unit": "gram"
+      }
+    ]
+  },
+  {
+    "title": "Linssoppa",
+    "description": "Mättande sopprecept med linser och grönsaker",
+    "ratings": [],
+    "imageUrl": "/assets/linssoppa.jpg",
+    "timeInMins": 45,
+    "price": 50,
+    "categories": [
+      "Huvudrätt",
+      "Veganskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Fräs lök och vitlök i olja tills mjukt",
+      "Tillsätt grönsaker, buljong och linser",
+      "Låt koka tills linserna är mjuka"
+    ],
+    "ingredients": [
+      {
+        "name": "Röda linser",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Grönsaksbuljong",
+        "amount": 1,
+        "unit": "liter"
+      }
+    ]
+  },
+  {
+    "title": "Kikärtscurry",
+    "description": "Smakrik curry med kikärtor och kokosmjölk",
+    "ratings": [],
+    "imageUrl": "/assets/kikartscurry.jpg",
+    "timeInMins": 40,
+    "price": 70,
+    "categories": [
+      "Huvudrätt",
+      "Veganskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Fräs lök och vitlök i olja tills mjukt",
+      "Tillsätt curry, kikärtor och tomater, låt koka",
+      "Tillsätt kokosmjölk och låt sjuda i 15 minuter"
+    ],
+    "ingredients": [
+      {
+        "name": "Kikärtor",
+        "amount": 1,
+        "unit": "burk"
+      },
+      {
+        "name": "Kokosmjölk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "Curry",
+        "amount": 1,
+        "unit": "msk"
+      }
+    ]
+  },
+  {
+    "title": "Sötpotatissallad",
+    "description": "Rostad sotpotatis med en syrlig lime dressing",
+    "ratings": [],
+    "imageUrl": "/assets/sotpotatissallad.jpg",
+    "timeInMins": 35,
+    "price": 60,
+    "categories": [
+      "Förrätt",
+      "Veganskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Skala och skär sötpotatis i kuber",
+      "Rosta i ugnen tills de är mjuka och gyllene",
+      "Blanda de rostade sötpotatisarna med limejuice och persilja"
+    ],
+    "ingredients": [
+      {
+        "name": "Sötpotatis",
+        "amount": 2,
+        "unit": "st"
+      },
+      {
+        "name": "Limejuice",
+        "amount": 2,
+        "unit": "msk"
+      },
+      {
+        "name": "Persilja",
+        "amount": 1,
+        "unit": "dl"
+      }
+    ]
+  },
+  {
+    "title": "Vegansk Avocadotoast",
+    "description": "Simple and delicious avocado toast with a hint of lemon and chili flakes",
+    "ratings": [],
+    "imageUrl": "/assets/vegansk_avocadotoast.jpg",
+    "timeInMins": 10,
+    "price": 30,
+    "categories": [
+      "Förrätt",
+      "Veganskt",
+      "Traditionellt"
+    ],
+    "instructions": [
+      "Mosa avokadon och blanda med citronjuice och salt",
+      "Bred ut blandningen på rostat bröd",
+      "Strö över chiliflakes och servera"
+    ],
+    "ingredients": [
+      {
+        "name": "Avokado",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Citronjuice",
+        "amount": 1,
+        "unit": "tsk"
+      },
+      {
+        "name": "Rostat bröd",
+        "amount": 2,
+        "unit": "skivor"
+      }
+    ]
   }
 ]
