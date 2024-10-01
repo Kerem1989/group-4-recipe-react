@@ -3,7 +3,7 @@
     "title": "Toast Skagen",
     "description": "Gott till champagne",
     "ratings": [],
-    "imageUrl": "/assets/toast_skagen.jpg",
+    "imageUrl": "https://www.lohmanders.se/wp-content/uploads/loh/ir_cache/2024/04/receptbild-toastskagen-desktop-3840x1760-1-scaled.jpg/3840_1760_75_receptbild-toastskagen-desktop-3840x1760-1-scaled.jpg.webp",
     "timeInMins": 15,
     "price": 150,
     "categories": [
@@ -38,7 +38,7 @@
     "title": "Köttbullar",
     "description": "Klassiska svenska köttbullar",
     "ratings": [],
-    "imageUrl": "/assets/kottbullar.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_223439/cf_259/klassiska_kottbullar.jpg",
     "timeInMins": 45,
     "price": 200,
     "categories": [
@@ -73,7 +73,7 @@
     "title": "Gravad Lax",
     "description": "Perfekt till midsommar",
     "ratings": [],
-    "imageUrl": "/assets/gravadlax.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234161/cf_259/gravad_lax.jpg",
     "timeInMins": 1440,
     "price": 250,
     "categories": [
@@ -108,7 +108,7 @@
     "title": "Raggmunk",
     "description": "Serveras med lingonsylt",
     "ratings": [],
-    "imageUrl": "/assets/raggmunk.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_250994/cf_259/raggmunk_med_flask.jpg",
     "timeInMins": 30,
     "price": 100,
     "categories": [
@@ -143,7 +143,7 @@
     "title": "Ärtsoppa",
     "description": "Traditionell torsdagsrätt",
     "ratings": [],
-    "imageUrl": "/assets/artsoppa.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1651049350/cloud/251332.jpg",
     "timeInMins": 120,
     "price": 50,
     "categories": [
@@ -178,7 +178,7 @@
     "title": "Pyttipanna",
     "description": "Enkel och snabb rätt",
     "ratings": [],
-    "imageUrl": "/assets/pyttipanna.jpg",
+    "imageUrl": "https://www.tiniskitchen.com/wp-content/uploads/2020/07/pyttipanna.jpg",
     "timeInMins": 20,
     "price": 80,
     "categories": [
@@ -213,7 +213,7 @@
     "title": "Janssons Frestelse",
     "description": "Perfekt till julbordet",
     "ratings": [],
-    "imageUrl": "/assets/janssons.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1697458775/cloud/292934.jpg",
     "timeInMins": 60,
     "price": 150,
     "categories": [
@@ -248,7 +248,7 @@
     "title": "Kroppkakor",
     "description": "Fyllda potatisbullar",
     "ratings": [],
-    "imageUrl": "/assets/kroppkakor.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_14417/cf_259/kroppkakor_av_kokt_potatis.jpg",
     "timeInMins": 90,
     "price": 120,
     "categories": [
@@ -283,7 +283,7 @@
     "title": "Kalops",
     "description": "Mustig köttgryta",
     "ratings": [],
-    "imageUrl": "/assets/kalops.jpg",
+    "imageUrl": "https://img.koket.se/standard-giant/kalops-med-mormorskokta-morotter.jpg.webp",
     "timeInMins": 120,
     "price": 180,
     "categories": [
@@ -318,7 +318,7 @@
     "title": "Rårakor",
     "description": "Serveras med lingonsylt",
     "ratings": [],
-    "imageUrl": "/assets/rarakor.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_18917/cf_259/rarakor.jpg",
     "timeInMins": 20,
     "price": 50,
     "categories": [
@@ -353,7 +353,7 @@
     "title": "Sill och Potatis",
     "description": "Klassisk svensk rätt",
     "ratings": [],
-    "imageUrl": "/assets/sillpotatis.jpg",
+    "imageUrl": "https://matunder20kr.se/wp-content/uploads/Midsummer_pickled_herring-1536x1132.jpg",
     "timeInMins": 30,
     "price": 100,
     "categories": [
@@ -388,7 +388,7 @@
     "title": "Fläskpannkaka",
     "description": "Ugnspannkaka med fläsk",
     "ratings": [],
-    "imageUrl": "/assets/flaskpannkaka.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1601545721/409319.jpg",
     "timeInMins": 40,
     "price": 80,
     "categories": [
@@ -423,7 +423,7 @@
     "title": "Laxpudding",
     "description": "Lax och potatis i ugn",
     "ratings": [],
-    "imageUrl": "/assets/laxpudding.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_218659/cf_259/klassisk_laxpudding.jpg",
     "timeInMins": 60,
     "price": 150,
     "categories": [
@@ -458,7 +458,7 @@
     "title": "Blodpudding",
     "description": "Serveras med lingonsylt",
     "ratings": [],
-    "imageUrl": "/assets/blodpudding.jpg",
+    "imageUrl": "https://cdn.sanity.io/images/3lvp46xg/production/62227c87be78edda7d9dfa3bbc5abb8ea582b47c-5616x3744.jpg?w=1080&q=75&fit=clip&auto=format",
     "timeInMins": 15,
     "price": 50,
     "categories": [
@@ -493,7 +493,7 @@
     "title": "Falukorv i ugn",
     "description": "Enkel och god rätt",
     "ratings": [],
-    "imageUrl": "/assets/falukorv.jpg",
+    "imageUrl": "https://images.arla.com/recordid/EB9DC91D-7794-4136-BE03FE8D47EB08B6/falukorv-i-ugn.jpg?format=jpg&width=1269&height=715&mode=crop",
     "timeInMins": 30,
     "price": 100,
     "categories": [
@@ -528,7 +528,7 @@
     "title": "Kåldolmar",
     "description": "Fyllda kålblad",
     "ratings": [],
-    "imageUrl": "/assets/kaldolmar.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_220741/cf_259/klassiska_kaldolmar.jpg",
     "timeInMins": 90,
     "price": 150,
     "categories": [
@@ -563,7 +563,7 @@
     "title": "Stekt Strömming",
     "description": "Serveras med potatismos",
     "ratings": [],
-    "imageUrl": "/assets/stromming.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1585685798/397580.jpg",
     "timeInMins": 30,
     "price": 100,
     "categories": [
@@ -598,7 +598,7 @@
     "title": "Äggakaka",
     "description": "Skånsk pannkaka",
     "ratings": [],
-    "imageUrl": "/assets/aggakaka.jpg",
+    "imageUrl": "https://static.wixstatic.com/media/844cd5_6b2cf43bad1949858b7e21e477e4fda4~mv2.webp/v1/fill/w_950,h_994,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/844cd5_6b2cf43bad1949858b7e21e477e4fda4~mv2.webp",
     "timeInMins": 30,
     "price": 80,
     "categories": [
@@ -633,7 +633,7 @@
     "title": "Sjömansbiff",
     "description": "Mustig köttgryta",
     "ratings": [],
-    "imageUrl": "/assets/sjomansbiff.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_240625/cf_259/sjomansbiff.jpg",
     "timeInMins": 120,
     "price": 200,
     "categories": [
@@ -668,7 +668,7 @@
     "title": "Renskav",
     "description": "Serveras med potatismos",
     "ratings": [],
-    "imageUrl": "/assets/renskav.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_178599/cf_259/renskav_med_champinjoner_och_lingon.jpg",
     "timeInMins": 30,
     "price": 150,
     "categories": [
