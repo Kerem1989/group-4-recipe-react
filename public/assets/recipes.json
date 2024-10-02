@@ -700,6 +700,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "title": "Kroppkakor",
     "description": "Fyllda potatisbullar",
     "ratings": [],
@@ -770,10 +771,12 @@
     ]
   },
   {
+=======
+>>>>>>> 0aee18de454b832efbed91f60672e1e5ac1df25d
     "title": "Glutenfria Crepes",
     "description": "Fluffiga pannkakor gjorda med glutenfritt mjöl med valfri fyllning",
     "ratings": [],
-    "imageUrl": "/assets/glutenfria_crepes.jpg",
+    "imageUrl": "https://res.cloudinary.com/hero-global/image/upload/ar_320:250,c_fill,dpr_1.0,f_auto,fl_lossy,g_auto,q_auto,w_768/v1/Semper/2021-05/GF_header_recept_glutenfria_pannkakor_med_laxrora_1558x694px",
     "timeInMins": 30,
     "price": 50,
     "categories": [
@@ -808,7 +811,7 @@
     "title": "Glutenfri Pizza",
     "description": "Pizza med glutenfri botten och valfri topping",
     "ratings": [],
-    "imageUrl": "/assets/glutenfri_pizza.jpg",
+    "imageUrl": "https://www.stadlermade.com/wp-content/uploads/2024/04/gluten-1-1.png",
     "timeInMins": 60,
     "price": 150,
     "categories": [
@@ -844,7 +847,7 @@
     "title": "Glutenfria Kötbullar",
     "description": "Klassiska svenska köttbullar utan gluten",
     "ratings": [],
-    "imageUrl": "/assets/glutenfria_kotbullar.jpg",
+    "imageUrl": "https://www.bullobratt.se/images/bilder/recept/kottbullar_p%C3%A5_fat.jpg",
     "timeInMins": 45,
     "price": 80,
     "categories": [
@@ -879,7 +882,7 @@
     "title": "Glutenfri Lasagne",
     "description": "En smakrik lasagne gjord med glutenfri pasta",
     "ratings": [],
-    "imageUrl": "/assets/glutenfri_lasagne.jpg",
+    "imageUrl": "https://bilder.kolonial.no/prod/oppskrifter/e3d6763c-4be4-4ec3-bf4a-26226d613bb8?auto=format&fit=clip&q=75&w=2000&s=a3f416d2589377e95b7794e19cdb0572",
     "timeInMins": 90,
     "price": 200,
     "categories": [
@@ -914,7 +917,7 @@
     "title": " Vegoburger",
     "description": "Hälsosam och god vegoburgare gjord på bönor och grönsaker",
     "ratings": [],
-    "imageUrl": "/assets/vegoburgare.jpg",
+    "imageUrl": "https://marleyspoon.com/media/recipes/83109/main_photos/large/veggie_burger_mit_ahornsirupglasur-52496098c98adf7b4a82b8b38fdf14dc.jpeg",
     "timeInMins": 40,
     "price": 70,
     "categories": [
@@ -949,7 +952,7 @@
     "title": "Svamprisotto",
     "description": "Krämig risotto med svamp och parmesanost",
     "ratings": [],
-    "imageUrl": "/assets/svamprisotto.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1610612421/416874.jpg",
     "timeInMins": 45,
     "price": 120,
     "categories": [
@@ -984,7 +987,7 @@
     "title": "Linssoppa",
     "description": "Mättande sopprecept med linser och grönsaker",
     "ratings": [],
-    "imageUrl": "/assets/linssoppa.jpg",
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_249694/cf_259/rod_linssoppa_med_kokos_och_tomat_.jpg",
     "timeInMins": 45,
     "price": 50,
     "categories": [
@@ -1019,7 +1022,7 @@
     "title": "Kikärtscurry",
     "description": "Smakrik curry med kikärtor och kokosmjölk",
     "ratings": [],
-    "imageUrl": "/assets/kikartscurry.jpg",
+    "imageUrl": "https://usercontent.one/wp/www.vegojakt.se/wp-content/uploads/2023/04/sotpotatis-kikartor-curry-vegansk-1024x574.png",
     "timeInMins": 40,
     "price": 70,
     "categories": [
@@ -1052,9 +1055,9 @@
   },
   {
     "title": "Sötpotatissallad",
-    "description": "Rostad sotpotatis med en syrlig lime dressing",
+    "description": "Rostad sotpotatis med en syrlig limedressing",
     "ratings": [],
-    "imageUrl": "/assets/sotpotatissallad.jpg",
+    "imageUrl": "https://bilder.kolonial.no/prod/oppskrifter/20217f6f-9e18-44d7-88bb-b6fbbf477c01?auto=format&fit=clip&q=75&w=2000&s=5f2bc2f9e951d42922a2b5c53fe2d2e6",
     "timeInMins": 35,
     "price": 60,
     "categories": [
@@ -1087,9 +1090,9 @@
   },
   {
     "title": "Vegansk Avocadotoast",
-    "description": "Simple and delicious avocado toast with a hint of lemon and chili flakes",
+    "description": "Enkel och god avocadotoast med en hint av citron och chili",
     "ratings": [],
-    "imageUrl": "/assets/vegansk_avocadotoast.jpg",
+    "imageUrl": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1567669152/381091.jpg",
     "timeInMins": 10,
     "price": 30,
     "categories": [
