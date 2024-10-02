@@ -48,21 +48,17 @@ export default function Header({ onSearch }) {
     return (
         <header className="bg-light-gray">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-                <div className="flex lg:flex-1">
+                <div className="flex lg:flex-2">
                     <Link to="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
+                        <h1 class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-400 drop-shadow-lg">
+  Svensk Husmankost
+</h1>
+
+
                     </Link>
                 </div>
-                <div className="flex lg:flex-1 justify-center">
-                    <input
-                        type="text"
-                        placeholder="Search recipe name or ingredient"
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                        className="border rounded-lg p-2 w-1/2"
-                    />
-                </div>
+
                 <div className="flex lg:hidden">
                     <button
                         type="button"
@@ -83,6 +79,13 @@ export default function Header({ onSearch }) {
                     <Link to="/gradesite" className="text-sm font-semibold leading-6 text-gray-900">
                         Betygsättning
                     </Link>
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                        className="border rounded-lg p-2 w-1/2"
+                    />
                 </PopoverGroup>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
