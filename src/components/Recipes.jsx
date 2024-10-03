@@ -26,6 +26,7 @@ export default function Recipes() {
                         <p className="text-gray-700 mb-2">{recipe.description}</p>
                         <p className="text-gray-500">Time: {recipe.timeInMins} mins</p>
                         <p className="text-gray-500">Price: {recipe.price} SEK</p>
+                        
                     </div>
                 ))}
             </div>
