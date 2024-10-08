@@ -4,7 +4,7 @@ export default function Recipes({ searchQuery }) {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch('/assets/recipes.json')
+    fetch('https://recept4-nupar.reky.se/recipes')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
