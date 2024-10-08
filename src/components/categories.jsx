@@ -145,7 +145,7 @@ function Categories() {
 
   // Fetch the recipes data from the JSON file
   useEffect(() => {
-    fetch('/assets/recipes.json')
+    fetch('https://recept4-nupar.reky.se/recipes')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
