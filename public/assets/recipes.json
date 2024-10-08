@@ -8,8 +8,8 @@
     "price": 150,
     "categories": [
       "Förrätt",
-      "Skaldjur",
-      "Smaskigt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Stek brödet",
@@ -51,7 +51,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Blanda ingredienserna",
@@ -85,8 +85,8 @@
     "price": 250,
     "categories": [
       "Förrätt",
-      "Fisk",
-      "Traditionellt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Blanda socker och salt",
@@ -121,7 +121,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Riv potatisen",
@@ -155,8 +155,8 @@
     "price": 50,
     "categories": [
       "Huvudrätt",
-      "Soppa",
-      "Traditionellt"
+      "Vegetariskt",
+      "Husmanskost"
     ],
     "instructions": [
       "Blötlägg ärtorna över natten",
@@ -191,7 +191,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Husmanskost"
     ],
     "instructions": [
       "Tärna potatis och kött",
@@ -225,8 +225,8 @@
     "price": 150,
     "categories": [
       "Huvudrätt",
-      "Potatis",
-      "Traditionellt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Skiva potatis och lök",
@@ -260,8 +260,8 @@
     "price": 120,
     "categories": [
       "Huvudrätt",
-      "Potatis",
-      "Traditionellt"
+      "Kött",
+      "Husmanskost"
     ],
     "instructions": [
       "Koka potatisen",
@@ -296,7 +296,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Bryn köttet",
@@ -331,7 +331,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Snabbmat"
+      "Husmanskost"
     ],
     "instructions": [
       "Riv potatisen",
@@ -365,8 +365,8 @@
     "price": 100,
     "categories": [
       "Huvudrätt",
-      "Fisk",
-      "Traditionellt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Koka potatisen",
@@ -401,7 +401,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Blanda smeten",
@@ -435,8 +435,8 @@
     "price": 150,
     "categories": [
       "Huvudrätt",
-      "Fisk",
-      "Traditionellt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Skiva potatis och lax",
@@ -471,7 +471,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Husmanskost"
     ],
     "instructions": [
       "Skiva blodpuddingen",
@@ -506,7 +506,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Husmanskost"
     ],
     "instructions": [
       "Skiva falukorven",
@@ -541,7 +541,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Förväll kålbladen",
@@ -575,8 +575,8 @@
     "price": 100,
     "categories": [
       "Huvudrätt",
-      "Fisk",
-      "Traditionellt"
+      "Fisk och Skaldjur",
+      "Husmanskost"
     ],
     "instructions": [
       "Panera strömmingen",
@@ -611,7 +611,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Blanda smeten",
@@ -646,7 +646,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Bryn köttet",
@@ -681,7 +681,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Stek renskaven",
@@ -716,7 +716,7 @@
     "categories": [
       "Förrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Blanda de torra ingredienserna",
@@ -751,7 +751,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Blanda glutenfri mjölmix och jäst",
@@ -787,7 +787,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Husmanskost"
     ],
     "instructions": [
       "Blanda köttfärs, ägg och glutenfritt ströbröd",
@@ -822,7 +822,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Koka glutenfri lasagneplattor",
@@ -857,7 +857,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Mosa bönor och blanda med grönsaker och kryddor",
@@ -892,7 +892,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och ris i olja tills glansigt",
@@ -927,7 +927,7 @@
     "categories": [
       "Huvudrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och vitlök i olja tills mjukt",
@@ -962,7 +962,7 @@
     "categories": [
       "Huvudrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och vitlök i olja tills mjukt",
@@ -997,7 +997,7 @@
     "categories": [
       "Förrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Skala och skär sötpotatis i kuber",
@@ -1032,7 +1032,7 @@
     "categories": [
       "Förrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Mosa avokadon och blanda med citronjuice och salt",
