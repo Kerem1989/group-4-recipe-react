@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Recipes({ searchQuery }) {
   const [recipes, setRecipes] = useState([]);
@@ -26,6 +28,7 @@ export default function Recipes({ searchQuery }) {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredRecipes.map((recipe, index) => (
+          <Link to={`/recipe/${recipe._id}`} key={index}>
           <div key={index} className="border rounded-lg p-4 shadow-lg">
             <h2 className="text-2xl font-semibold mb-2">{recipe.title}</h2>
             <img src={recipe.imageUrl} alt={recipe.title} className="w-full h-48 object-cover mb-2 rounded" />
@@ -33,6 +36,7 @@ export default function Recipes({ searchQuery }) {
             <p className="text-gray-500">Time: {recipe.timeInMins} mins</p>
             <p className="text-gray-500">Price: {recipe.price} SEK</p>
           </div>
+          </Link>
         ))}
       </div>
     </div>
