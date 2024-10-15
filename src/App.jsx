@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Recipes from "./components/Recipes.jsx";
 import Header from "./components/header.jsx";
-import Hero from "./components/hero.jsx";
+import Hero from "./components/Hero.jsx";
 import Gradesite from "./components/gradesite.jsx";
 import Categories from "./components/categories.jsx";
 
