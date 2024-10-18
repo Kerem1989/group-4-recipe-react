@@ -26,8 +26,8 @@ export default function Header({ onSearch }) {
                     <div className="flex lg:flex-2">
                         <Link to="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-400 drop-shadow-lg">
-                                Svensk Husmankost
+                            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-400 drop-shadow-lg">
+                                Enkla husman
                             </h1>
                         </Link>
                     </div>
