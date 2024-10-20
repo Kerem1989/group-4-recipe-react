@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/hero.jsx";
 import Gradesite from "./components/gradesite.jsx";
 import Categories from "./components/categories.jsx";
+import RecipeDetails from './components/recipedetails.jsx';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<><Hero /><Recipes searchQuery={searchQuery} /></>} />
           <Route path="/gradesite" element={<Gradesite />} /> 
           <Route path="/categories" element={<Categories />} />
+          <Route path="/recipe/:recipeId" element={<RecipeDetails/>} />
         </Routes>
       </div>
     </Router>
