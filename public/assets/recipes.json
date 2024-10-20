@@ -8,8 +8,8 @@
     "price": 150,
     "categories": [
       "Förrätt",
-      "Skaldjur",
-      "Smaskigt"
+      "Fisk och Skaldjur",
+      "Traditionellt"
     ],
     "instructions": [
       "Stek brödet",
@@ -78,7 +78,7 @@
     "price": 250,
     "categories": [
       "Förrätt",
-      "Fisk",
+      "Fisk och Skaldjur",
       "Traditionellt"
     ],
     "instructions": [
@@ -101,6 +101,16 @@
         "name": "Salt",
         "amount": 2,
         "unit": "msk"
+      },
+      {
+        "name": "Dill",
+        "amount": 1,
+        "unit": "kruka"
+      },
+      {
+        "name": "Senapssås",
+        "amount": 1,
+        "unit": "dl"
       }
     ]
   },
@@ -136,6 +146,11 @@
         "name": "Mjölk",
         "amount": 2,
         "unit": "dl"
+      },
+      {
+        "name": "Lingonsylt",
+        "amount": 1,
+        "unit": "dl"
       }
     ]
   },
@@ -148,7 +163,7 @@
     "price": 50,
     "categories": [
       "Huvudrätt",
-      "Soppa",
+      "Vegetariskt",
       "Traditionellt"
     ],
     "instructions": [
@@ -184,7 +199,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Traditionellt"
     ],
     "instructions": [
       "Tärna potatis och kött",
@@ -206,6 +221,16 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Ägg",
+        "amount": 2,
+        "unit": "st"
+      },
+      {
+        "name": "Rödbetor",
+        "amount": 1,
+        "unit": "burk"
       }
     ]
   },
@@ -218,7 +243,7 @@
     "price": 150,
     "categories": [
       "Huvudrätt",
-      "Potatis",
+      "Fisk och Skaldjur",
       "Traditionellt"
     ],
     "instructions": [
@@ -241,6 +266,16 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Vispgrädde",
+        "amount": 3,
+        "unit": "dl"
+      },
+      {
+        "name": "Ströbröd",
+        "amount": 1,
+        "unit": "msk"
       }
     ]
   },
@@ -253,7 +288,7 @@
     "price": 120,
     "categories": [
       "Huvudrätt",
-      "Potatis",
+      "Kött",
       "Traditionellt"
     ],
     "instructions": [
@@ -311,6 +346,21 @@
         "name": "Morötter",
         "amount": 3,
         "unit": "st"
+      },
+      {
+        "name": "Lagerblad",
+        "amount": 3,
+        "unit": "st"
+      },
+      {
+        "name": "Kalvfond",
+        "amount": 2,
+        "unit": "msk"
+      },
+      {
+        "name": "Smör",
+        "amount": 1,
+        "unit": "msk"
       }
     ]
   },
@@ -324,7 +374,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Snabbmat"
+      "Traditionellt"
     ],
     "instructions": [
       "Riv potatisen",
@@ -358,7 +408,7 @@
     "price": 100,
     "categories": [
       "Huvudrätt",
-      "Fisk",
+      "Fisk och Skaldjur",
       "Traditionellt"
     ],
     "instructions": [
@@ -381,6 +431,11 @@
         "name": "Gräddfil",
         "amount": 2,
         "unit": "dl"
+      },
+      {
+        "name": "Gräslök",
+        "amount": 1,
+        "unit": "kruka"
       }
     ]
   },
@@ -416,6 +471,11 @@
         "name": "Fläsk",
         "amount": 200,
         "unit": "gram"
+      },
+      {
+        "name": "Ägg",
+        "amount": 4,
+        "unit": "st"
       }
     ]
   },
@@ -428,7 +488,7 @@
     "price": 150,
     "categories": [
       "Huvudrätt",
-      "Fisk",
+      "Fisk och Skaldjur",
       "Traditionellt"
     ],
     "instructions": [
@@ -451,6 +511,16 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Grädde",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Dill",
+        "amount": 1,
+        "unit": "kruka"
       }
     ]
   },
@@ -464,7 +534,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Traditionellt"
     ],
     "instructions": [
       "Skiva blodpuddingen",
@@ -499,7 +569,7 @@
     "categories": [
       "Huvudrätt",
       "Kött",
-      "Snabbmat"
+      "Traditionellt"
     ],
     "instructions": [
       "Skiva falukorven",
@@ -521,6 +591,16 @@
         "name": "Ost",
         "amount": 100,
         "unit": "gram"
+      },
+      {
+        "name": "Tomat",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Gurka",
+        "amount": 1,
+        "unit": "st"
       }
     ]
   },
@@ -556,6 +636,11 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Smör",
+        "amount": 1,
+        "unit": "dl"
       }
     ]
   },
@@ -568,7 +653,7 @@
     "price": 100,
     "categories": [
       "Huvudrätt",
-      "Fisk",
+      "Fisk och Skaldjur",
       "Traditionellt"
     ],
     "instructions": [
@@ -591,6 +676,21 @@
         "name": "Smör",
         "amount": 50,
         "unit": "gram"
+      },
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Grädde",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Lingonsylt",
+        "amount": 1,
+        "unit": "dl"
       }
     ]
   },
@@ -661,6 +761,16 @@
         "name": "Lök",
         "amount": 2,
         "unit": "st"
+      },
+      {
+        "name": "Matlagsningsvin",
+        "amount": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "Lagerblad",
+        "amount": 3,
+        "unit": "st"
       }
     ]
   },
@@ -696,6 +806,16 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
+      },
+      {
+        "name": "Lingonsylt",
+        "amount": 1,
+        "unit": "dl"
       }
     ]
   },
@@ -709,7 +829,7 @@
     "categories": [
       "Förrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Blanda de torra ingredienserna",
@@ -731,6 +851,16 @@
         "name": "Ägg",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Fyllning",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Smör",
+        "amount": 50,
+        "unit": "gram"
       }
     ]
   },
@@ -744,7 +874,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Blanda glutenfri mjölmix och jäst",
@@ -767,6 +897,16 @@
         "name": "Mozzarella",
         "amount": 200,
         "unit": "gram"
+      },
+      {
+        "name": "Tomatsås",
+        "amount": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "Skinka",
+        "amount": 100,
+        "unit": "gram"
       }
     ]
   },
@@ -780,7 +920,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Blanda köttfärs, ägg och glutenfritt ströbröd",
@@ -802,6 +942,16 @@
         "name": "Glutenfritt ströbröd",
         "amount": 1,
         "unit": "dl"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Smör",
+        "amount": 50,
+        "unit": "gram"
       }
     ]
   },
@@ -815,7 +965,7 @@
     "categories": [
       "Huvudrätt",
       "Glutenfritt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Koka glutenfri lasagneplattor",
@@ -837,6 +987,21 @@
         "name": "Tomatsås",
         "amount": 500,
         "unit": "ml"
+      },
+      {
+        "name": "Mozzarella",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Grädde",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Parmesan",
+        "amount": 50,
+        "unit": "gram"
       }
     ]
   },
@@ -850,7 +1015,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Mosa bönor och blanda med grönsaker och kryddor",
@@ -872,6 +1037,16 @@
         "name": "Hamburgerbröd",
         "amount": 4,
         "unit": "st"
+      },
+      {
+        "name": "Tomat",
+        "amount": 1,
+        "unit": "st"
+      },
+      {
+        "name": "Sallad",
+        "amount": 1,
+        "unit": "påse"
       }
     ]
   },
@@ -885,7 +1060,7 @@
     "categories": [
       "Huvudrätt",
       "Vegetariskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och ris i olja tills glansigt",
@@ -907,6 +1082,11 @@
         "name": "Parmesan",
         "amount": 50,
         "unit": "gram"
+      },
+      {
+        "name": "Lök",
+        "amount": 1,
+        "unit": "st"
       }
     ]
   },
@@ -920,7 +1100,7 @@
     "categories": [
       "Huvudrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och vitlök i olja tills mjukt",
@@ -942,6 +1122,21 @@
         "name": "Grönsaksbuljong",
         "amount": 1,
         "unit": "liter"
+      },
+      {
+        "name": "Morötter",
+        "amount": 2,
+        "unit": "st"
+      },
+      {
+        "name": "Vitlök",
+        "amount": 2,
+        "unit": "klyftor"
+      },
+      {
+        "name": "Tomater",
+        "amount": 2,
+        "unit": "st"
       }
     ]
   },
@@ -955,7 +1150,7 @@
     "categories": [
       "Huvudrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Fräs lök och vitlök i olja tills mjukt",
@@ -990,7 +1185,7 @@
     "categories": [
       "Förrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Skala och skär sötpotatis i kuber",
@@ -1025,7 +1220,7 @@
     "categories": [
       "Förrätt",
       "Veganskt",
-      "Traditionellt"
+      "Internationellt"
     ],
     "instructions": [
       "Mosa avokadon och blanda med citronjuice och salt",
