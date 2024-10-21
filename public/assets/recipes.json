@@ -31,6 +31,16 @@
         "name": "Smör",
         "amount": 100,
         "unit": "gram"
+      },
+      {
+        "name": "Räkor",
+        "amount": 200,
+        "unit": "gram"
+      },
+      {
+        "name": "Dill",
+        "amount": 1,
+        "unit": "kruka"
       }
     ]
   },
@@ -66,6 +76,16 @@
         "name": "Ströbröd",
         "amount": 1,
         "unit": "dl"
+      },
+      {
+        "name": "Grädde",
+        "amount": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "Potatis",
+        "amount": 500,
+        "unit": "gram"
       }
     ]
   },
@@ -186,6 +206,11 @@
         "name": "Lök",
         "amount": 1,
         "unit": "st"
+      },
+      {
+        "name": "Senap",
+        "amount": 1,
+        "unit": "msk"
       }
     ]
   },
