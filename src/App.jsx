@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Hero from "./components/hero.jsx";
-import Gradesite from "./components/gradesite.jsx";
 import Categories from "./components/asidecategories.jsx";
 import RecipeDetails from './components/recipedetails.jsx';
 
@@ -15,8 +14,6 @@ function App() {
         <Header onSearch={setSearchQuery} />
         <Routes>
           <Route path="/" element={<><Hero /><Categories /></>} />
-          <Route path="/gradesite" element={<Gradesite />} /> 
-          <Route path="/categories" element={<Categories />} />
           <Route path="/recipe/:recipeId" element={<RecipeDetails/>} />
         </Routes>
       </div>
