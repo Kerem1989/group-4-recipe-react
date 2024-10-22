@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Recipes from "./components/Recipes.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/hero.jsx";
 import Gradesite from "./components/gradesite.jsx";
-import Categories from "./components/categories.jsx";
+import Categories from "./components/asidecategories.jsx";
 import RecipeDetails from './components/recipedetails.jsx';
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
       <div className="App">
         <Header onSearch={setSearchQuery} />
         <Routes>
-          <Route path="/" element={<><Hero /><Recipes searchQuery={searchQuery} /></>} />
+          <Route path="/" element={<><Hero /><Categories /></>} />
           <Route path="/gradesite" element={<Gradesite />} /> 
           <Route path="/categories" element={<Categories />} />
           <Route path="/recipe/:recipeId" element={<RecipeDetails/>} />
