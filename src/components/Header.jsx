@@ -11,13 +11,7 @@ import {
 import { Link } from "react-router-dom";
 
 export default function Header({ onSearch }) {
-    const [searchQuery, setSearchQuery] = useState('');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    const handleSearchChange = (e) => {
-        setSearchQuery(e.target.value);
-        onSearch(e.target.value);
-    };
 
     return (
         <>
@@ -43,35 +37,13 @@ export default function Header({ onSearch }) {
                         </button>
                     </div>
 
-                    {/* Sökruta visas endast på större skärmar */}
                     <PopoverGroup className="hidden lg:flex lg:gap-x-12">
                         <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">
                             Startsida
                         </Link>
-                        <Link to="/categories" className="text-sm font-semibold leading-6 text-gray-900">
-                            Kategorier
-                        </Link>
-                        <input
-                            type="text"
-                            placeholder="Search"
-                            value={searchQuery}
-                            onChange={handleSearchChange}
-                            className="border rounded-lg p-2 w-1/2"
-                        />
                     </PopoverGroup>
                 </nav>
             </header>
-
-            {/* Sökruta under headern för mobilstorlek */}
-            <div className="lg:hidden px-6 py-4 bg-light-gray">
-                <input
-                    type="text"
-                    placeholder="Search"
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                    className="border rounded-lg p-2 w-full"
-                />
-            </div>
 
             {/* Mobilmenyn */}
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
