@@ -47,40 +47,50 @@ function RecipeDetails() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Kontrollera om namnet innehåller siffror
+    const containsNumbers = /\d/;
     if (name.trim() === "" || commentText.trim() === "") {
-      setValidationError("Både namn och kommentar måste fyllas i.");
-      return;
+        setValidationError("Både namn och kommentar måste fyllas i.");
+        setSubmitMessage(""); // Rensa tackmeddelandet
+        return;
+    } else if (containsNumbers.test(name)) {
+        setValidationError("Namnet får inte innehålla siffror.");
+        setSubmitMessage(""); // Rensa tackmeddelandet
+        return;
     }
 
     setValidationError(null);
 
     try {
-      setIsSubmitting(true);
-      setSubmitMessage("");
+        setIsSubmitting(true);
+        setSubmitMessage(""); // Rensa tackmeddelandet
 
-      const response = await fetch(`https://recept4-nupar.reky.se/recipes/${recipeId}/comments`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ content: commentText }),
-      });
+        const response = await fetch(`https://recept4-nupar.reky.se/recipes/${recipeId}/comments`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ content: commentText, author: name }), // Skickar både namn och kommentar
+        });
 
-      if (!response.ok) {
-        throw new Error("Misslyckades att skicka kommentar.");
-      }
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error("Serverfel:", errorData);
+            throw new Error("Misslyckades att skicka kommentar.");
+        }
 
-      setCommentText("");  // Tömma kommentarsfältet efter inskickning
-      setName("");  // Tömma namnfältet efter inskickning
-      setSubmitMessage("Tack för din kommentar!");
-      fetchComments();  // Hämta uppdaterade kommentarer
+        setCommentText("");
+        setName("");
+        setSubmitMessage("Tack för din kommentar!");
+        setValidationError(null); // Rensa valideringsmeddelandet
+        fetchComments();
     } catch (error) {
-      setValidationError("Något gick fel vid inskickning.");
+        setValidationError("Något gick fel vid inskickning.");
+        console.error("Fel vid inskickning:", error);
     } finally {
-      setIsSubmitting(false);
+        setIsSubmitting(false);
     }
-  };
-
+};
 
   const CommentDropdown = ({ id }) => (
     <div className="relative">
