@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import Hero from "./hero.jsx";
 
-const DropDownList = ({label, options, selectedOptions, handleOptionClick}) => {
+const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -31,8 +32,8 @@ const DropDownList = ({label, options, selectedOptions, handleOptionClick}) => {
                                 className="rounded dark:bg-gray-700"
                             />
                             <span className={selectedOptions.includes(option) ? 'font-bold' : ''}>
-                {option}
-              </span>
+                                {option}
+                            </span>
                         </li>
                     ))}
                 </ul>
@@ -41,16 +42,15 @@ const DropDownList = ({label, options, selectedOptions, handleOptionClick}) => {
     );
 };
 
-const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
+// Main DashboardLayout Component
+const DashboardLayout = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [recipes, setRecipes] = useState([]);
     const [selectedCategories, setSelectedCategories] = useState([]);
     const [categories, setCategories] = useState([]);
     const [selectedTimes, setSelectedTimes] = useState([]);
     const [timeOptions, setTimeOptions] = useState([]);
-    const [internalSearchQuery, setInternalSearchQuery] = useState('');
-
-    const searchQuery = externalSearchQuery !== undefined ? externalSearchQuery : internalSearchQuery;
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
         fetch('https://recept4-nupar.reky.se/recipes')
@@ -82,7 +82,6 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
         );
     };
 
-    /* LOGIK FÖR DIFFICULTY */
     const getDifficulty = (timeInMins) => {
         if (timeInMins < 20) {
             return "Lätt";
@@ -107,84 +106,75 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
     });
 
     return (
-        <div className="min-h-screen flex bg-gray-100 dark:bg-gray-900">
-            {/* Mobile menu button */}
-            <button
-                onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            >
-                <span className="sr-only">Open sidebar</span>
-                <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                    <path clipRule="evenodd" fillRule="evenodd"
-                          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"/>
-                </svg>
-            </button>
+        <>
+            <Hero searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+            <div className="min-h-screen flex bg-gray-100 dark:bg-gray-900">
+                {/* Mobile menu button */}
+                <button
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                    className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                >
+                    <span className="sr-only">Open sidebar</span>
+                    <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                        <path clipRule="evenodd" fillRule="evenodd"
+                              d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"/>
+                    </svg>
+                </button>
 
-            {/* Sidebar */}
-            <aside
-                className={`relative w-64 transition-transform ${
-                    sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-                } sm:translate-x-0`}
-                aria-label="Sidebar"
-            >
-                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-                    {/* Only show search input if no external searchQuery is provided */}
-                    {externalSearchQuery === undefined && (
-                        <div className="mb-4">
-                            <input
-                                type="text"
-                                placeholder="Sök recept..."
-                                className="w-full p-2 rounded-lg border dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                value={internalSearchQuery}
-                                onChange={(e) => setInternalSearchQuery(e.target.value)}
-                            />
-                        </div>
-                    )}
-
-                    {/* Filter dropdowns */}
-                    <DropDownList
-                        label="Kategorier"
-                        options={categories}
-                        selectedOptions={selectedCategories}
-                        handleOptionClick={handleCategoryClick}
-                    />
-                    <DropDownList
-                        label="Tillagningstid"
-                        options={timeOptions}
-                        selectedOptions={selectedTimes}
-                        handleOptionClick={handleTimeClick}
-                    />
-                </div>
-            </aside>
-
-            {/* Main content */}
-            <main className="flex-1 p-4">
-                <div className="container mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {filteredRecipes.map((recipe, index) => (
-                            <Link
-                                to={`/recipe/${recipe._id}`}
-                                key={index}
-                                className="border rounded-lg p-4 shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition-shadow duration-200"
-                            >
-                                <h2 className="text-2xl font-semibold mb-2 dark:text-white">{recipe.title}</h2>
-                                <img
-                                    src={recipe.imageUrl}
-                                    alt={recipe.title}
-                                    className="w-full h-48 object-cover mb-2 rounded"
-                                />
-                                <p className="text-gray-700 mb-2 dark:text-gray-300">{recipe.description
-                                    ? recipe.description.split('.')[0] + '.'  // Lägger tillbaka punkten
-                                    : ''}</p>
-                                <p className="text-gray-500 dark:text-gray-400">Tillagningstid: {recipe.timeInMins} mins</p>
-                                <p className="text-gray-500 dark:text-gray-400">Pris: {recipe.price} SEK</p>
-                                <p className="text-gray-500 dark:text-gray-400">Svårighetsgrad: {getDifficulty(recipe.timeInMins)}</p>
-                            </Link>
-                        ))}
+                {/* Sidebar */}
+                <aside
+                    className={`relative w-64 transition-transform ${
+                        sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                    } sm:translate-x-0`}
+                    aria-label="Sidebar"
+                >
+                    <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+                        <DropDownList
+                            label="Kategorier"
+                            options={categories}
+                            selectedOptions={selectedCategories}
+                            handleOptionClick={handleCategoryClick}
+                        />
+                        <DropDownList
+                            label="Tillagningstid"
+                            options={timeOptions}
+                            selectedOptions={selectedTimes}
+                            handleOptionClick={handleTimeClick}
+                        />
                     </div>
-                </div>
-            </main>
-        </div>
+                </aside>
+
+                {/* Main content */}
+                <main className="flex-1 p-4">
+                    <div className="container mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {filteredRecipes.map((recipe, index) => (
+                                <Link
+                                    to={`/recipe/${recipe._id}`}
+                                    key={index}
+                                    className="border rounded-lg p-4 shadow-lg bg-white dark:bg-gray-800 hover:shadow-xl transition-shadow duration-200"
+                                >
+                                    <h2 className="text-2xl font-semibold mb-2 dark:text-white">{recipe.title}</h2>
+                                    <img
+                                        src={recipe.imageUrl}
+                                        alt={recipe.title}
+                                        className="w-full h-48 object-cover mb-2 rounded"
+                                    />
+                                    <p className="text-gray-700 mb-2 dark:text-gray-300">
+                                        {recipe.description
+                                            ? recipe.description.split('.')[0] + '.'
+                                            : ''}
+                                    </p>
+                                    <p className="text-gray-500 dark:text-gray-400">Tillagningstid: {recipe.timeInMins} mins</p>
+                                    <p className="text-gray-500 dark:text-gray-400">Pris: {recipe.price} SEK</p>
+                                    <p className="text-gray-500 dark:text-gray-400">Svårighetsgrad: {getDifficulty(recipe.timeInMins)}</p>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </>
     );
 };
 
