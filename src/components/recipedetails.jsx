@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, memo } from "react";
 import { useParams } from "react-router-dom";
 
 function RecipeDetails() {
-  const { recipeId } = useParams();
+  const {recipeId} = useParams();
   const [recipe, setRecipe] = useState(null);
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -55,20 +55,20 @@ function RecipeDetails() {
     e.preventDefault();
     const containsNumbers = /\d/;
     if (name.trim() === "" || commentText.trim() === "") {
-        setValidationError("Både namn och kommentar måste fyllas i.");
-        setSubmitMessage(""); 
-        return;
+      setValidationError("Både namn och kommentar måste fyllas i.");
+      setSubmitMessage("");
+      return;
     } else if (containsNumbers.test(name)) {
-        setValidationError("Namnet får inte innehålla siffror.");
-        setSubmitMessage("");
-        return;
+      setValidationError("Namnet får inte innehålla siffror.");
+      setSubmitMessage("");
+      return;
     }
 
     setValidationError(null);
 
     try {
-        setIsSubmitting(true);
-        setSubmitMessage("");
+      setIsSubmitting(true);
+      setSubmitMessage("");
 
       const response = await fetch(`https://recept4-nupar.reky.se/recipes/${recipeId}/comments`, {
         method: "POST",
@@ -91,10 +91,10 @@ function RecipeDetails() {
       setSubmitMessage("Tack för din kommentar!");
       await showComments();
     } catch (error) {
-        setValidationError("Något gick fel vid inskickning.");
-        console.error("Fel vid inskickning:", error);
+      setValidationError("Något gick fel vid inskickning.");
+      console.error("Fel vid inskickning:", error);
     } finally {
-        setIsSubmitting(false);
+      setIsSubmitting(false);
     }
   };
 
@@ -120,8 +120,9 @@ function RecipeDetails() {
 
   return (
       <div className="container mx-auto p-4">
-        <div className="flex flex-col lg:flex-row lg:justify-between mb-4">
-          <div className="lg:w-1/2 lg:mt-12 bg-gray-200 dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+        <div className="flex flex-col lg:flex-row lg:justify-between mb-4 lg:space-x-4">
+          {/* Textdelen */}
+          <div className="lg:flex-1 lg:mt-12 bg-gray-200 dark:bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col justify-between">
             <h1 className="text-4xl font-extrabold mb-4 dark:text-black">{recipe.title}</h1>
             <p className="text-gray-700 dark:text-gray-400 mb-4">{recipe.description}</p>
             <p className="text-xl font-semibold mb-4">Pris: {recipe.price} kronor</p>
@@ -142,17 +143,21 @@ function RecipeDetails() {
               </ol>
             </div>
           </div>
-          <div className="lg:w-1/2 lg:pl-4">
+
+          {/* Bilddelen */}
+          <div className="lg:flex-1 lg:pl-4">
             <img
                 src={recipe.imageUrl}
                 alt={recipe.title}
-                className="w-full h-auto rounded shadow-lg object-cover"
+                className="w-full h-full max-h-full rounded shadow-lg object-cover"
+                style={{ maxHeight: "100%" }}
             />
           </div>
         </div>
-        
+
+        {/* Kommentarsektionen */}
         <section className="lg:w-1/2 mt-8 mx-auto bg-gray-200 p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-extrabold mb-6 text-center dark:text-black">Kommentarer</h2>
+          <h2 className="text-2xl font-extrabold mb-6 text-center dark:text-black">Lämna kommentar</h2>
           <form className="mb-6" onSubmit={handleSubmit}>
             <div className="flex flex-col space-y-4">
               <div>
@@ -192,9 +197,10 @@ function RecipeDetails() {
               {isSubmitting ? "Skickar..." : "Posta kommentar"}
             </button>
           </form>
-          
+
+          {/* Visning av kommentarer */}
           <div className="comments-section space-y-4">
-            <h2 className="text-lg font-bold mb-4">Comments</h2>
+            <h2 className="text-lg font-bold mb-4">Kommentarer</h2>
             {comments.map((comment, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg space-y-2">
                   <div className="flex items-center mb-2">
@@ -210,6 +216,7 @@ function RecipeDetails() {
         </section>
       </div>
   );
+
 }
 
 export default RecipeDetails;

@@ -10,7 +10,7 @@ const DropDownList = ({label, options, selectedOptions, handleOptionClick}) => {
                 className="w-full p-2 text-left text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group flex justify-between items-center"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span>{label}: {selectedOptions.length > 0 ? selectedOptions.join(", ") : "Select"}</span>
+                <span>{label}: {selectedOptions.length > 0 ? selectedOptions.join(", ") : "Välj"}</span>
                 <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none"
                      stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
@@ -85,11 +85,11 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
     /* LOGIK FÖR DIFFICULTY */
     const getDifficulty = (timeInMins) => {
         if (timeInMins < 20) {
-            return "EASY";
+            return "Lätt";
         } else if (timeInMins <= 30) {
-            return "MEDIUM";
+            return "Medel";
         } else {
-            return "DIFFICULT";
+            return "Svårt";
         }
     };
 
@@ -133,7 +133,7 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
                         <div className="mb-4">
                             <input
                                 type="text"
-                                placeholder="Search recipes..."
+                                placeholder="Sök recept..."
                                 className="w-full p-2 rounded-lg border dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                                 value={internalSearchQuery}
                                 onChange={(e) => setInternalSearchQuery(e.target.value)}
@@ -143,13 +143,13 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
 
                     {/* Filter dropdowns */}
                     <DropDownList
-                        label="Categories"
+                        label="Kategorier"
                         options={categories}
                         selectedOptions={selectedCategories}
                         handleOptionClick={handleCategoryClick}
                     />
                     <DropDownList
-                        label="Cooking Time"
+                        label="Tillagningstid"
                         options={timeOptions}
                         selectedOptions={selectedTimes}
                         handleOptionClick={handleTimeClick}
@@ -173,10 +173,12 @@ const DashboardLayout = ({searchQuery: externalSearchQuery}) => {
                                     alt={recipe.title}
                                     className="w-full h-48 object-cover mb-2 rounded"
                                 />
-                                <p className="text-gray-700 mb-2 dark:text-gray-300">{recipe.description}</p>
-                                <p className="text-gray-500 dark:text-gray-400">Time: {recipe.timeInMins} mins</p>
-                                <p className="text-gray-500 dark:text-gray-400">Price: {recipe.price} SEK</p>
-                                <p className="text-gray-500 dark:text-gray-400">Difficulty: {getDifficulty(recipe.timeInMins)}</p>
+                                <p className="text-gray-700 mb-2 dark:text-gray-300">{recipe.description
+                                    ? recipe.description.split('.')[0] + '.'  // Lägger tillbaka punkten
+                                    : ''}</p>
+                                <p className="text-gray-500 dark:text-gray-400">Tillagningstid: {recipe.timeInMins} mins</p>
+                                <p className="text-gray-500 dark:text-gray-400">Pris: {recipe.price} SEK</p>
+                                <p className="text-gray-500 dark:text-gray-400">Svårighetsgrad: {getDifficulty(recipe.timeInMins)}</p>
                             </Link>
                         ))}
                     </div>
