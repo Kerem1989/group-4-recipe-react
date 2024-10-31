@@ -18,12 +18,12 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
                 </svg>
             </button>
             {isOpen && (
-                <ul className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700 max-h-[300px] overflow-auto">
+                <ul className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700">
                     {options.map((option, index) => (
                         <li
                             key={index}
                             onClick={() => handleOptionClick(option)}
-                            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2"
+                            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2 text-left"
                         >
                             <input
                                 type="checkbox"
@@ -41,6 +41,7 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
         </div>
     );
 };
+
 
 const DashboardLayout = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -141,12 +142,12 @@ const DashboardLayout = () => {
 
                 {/* Sidebar */}
                 <aside
-                    className={`fixed top-0 left-0 h-full z-50 bg-gray-50 dark:bg-gray-800 w-64 p-4 overflow-hidden transition-transform ${
+                    className={`fixed top-0 left-0 h-full z-50 bg-gray-50 dark:bg-gray-800 w-64 p-4 transition-transform ${
                         sidebarOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
                     } sm:static sm:transform-none`}
                     aria-label="Sidebar"
                 >
-                    <div className="h-full">
+                    <div className="h-auto">
                         <DropDownList
                             label="Kategorier"
                             options={categories}
