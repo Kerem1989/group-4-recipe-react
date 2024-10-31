@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Hero from "./hero.jsx";
 
 const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) => {
@@ -18,7 +18,7 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
                 </svg>
             </button>
             {isOpen && (
-                <ul className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700">
+                <ul className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700 max-h-[300px] overflow-auto">
                     {options.map((option, index) => (
                         <li
                             key={index}
@@ -42,7 +42,6 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
     );
 };
 
-// Main DashboardLayout Component
 const DashboardLayout = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [recipes, setRecipes] = useState([]);
@@ -108,11 +107,19 @@ const DashboardLayout = () => {
     return (
         <>
             <Hero searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-            <div className="min-h-screen flex bg-gray-100 dark:bg-gray-900">
+            <div className="min-h-screen flex bg-gray-100 dark:bg-gray-900 relative">
+                {/* Overlay for mobile sidebar */}
+                {sidebarOpen && (
+                    <div
+                        className="fixed inset-0 bg-black opacity-50 z-40"
+                        onClick={() => setSidebarOpen(false)}
+                    />
+                )}
+
                 {/* Mobile menu button */}
                 <button
                     onClick={() => setSidebarOpen(!sidebarOpen)}
-                    className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-50"
                 >
                     <span className="sr-only">Open sidebar</span>
                     <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -123,12 +130,12 @@ const DashboardLayout = () => {
 
                 {/* Sidebar */}
                 <aside
-                    className={`relative w-64 transition-transform ${
-                        sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-                    } sm:translate-x-0`}
+                    className={`fixed top-0 left-0 h-full z-50 bg-gray-50 dark:bg-gray-800 w-64 p-4 overflow-hidden transition-transform ${
+                        sidebarOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
+                    } sm:static sm:transform-none`}
                     aria-label="Sidebar"
                 >
-                    <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+                    <div className="h-full">
                         <DropDownList
                             label="Kategorier"
                             options={categories}
@@ -145,7 +152,7 @@ const DashboardLayout = () => {
                 </aside>
 
                 {/* Main content */}
-                <main className="flex-1 p-4">
+                <main className="flex-1 p-4 overflow-hidden">
                     <div className="container mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {filteredRecipes.map((recipe, index) => (
