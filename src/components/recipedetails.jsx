@@ -194,7 +194,7 @@ function RecipeDetails() {
                 disabled={isSubmitting}
                 className={`inline-flex items-center py-3 px-6 text-sm font-semibold text-black bg-gray-300 rounded-lg shadow-lg hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-700 transition duration-200 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''} mt-4`}
             >
-              {isSubmitting ? "Skickar..." : "Posta kommentar"}
+              {isSubmitting ? "Skickar..." : "Skicka kommentar"}
             </button>
           </form>
 
