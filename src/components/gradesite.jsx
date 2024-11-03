@@ -1,3 +1,4 @@
+/*
 import React, { useState, useEffect } from "react";
 
 export default function Recipes() {
@@ -114,7 +115,7 @@ export default function Recipes() {
             <p className="text-gray-500">Tid: {recipe.timeInMins} minuter</p>
             <p className="text-gray-500">Pris: {recipe.price} SEK</p>
 
-            {/* Comment Form */}
+            {/* Comment Form *//*
             <h3 className="text-xl font-semibold mt-4">Lämna en kommentar</h3>
             {formMessage[recipe.id] && <p className="text-red-500">{formMessage[recipe.id]}</p>}
             <form onSubmit={(e) => handleCommentSubmit(recipe.id, e)}>
@@ -145,14 +146,14 @@ export default function Recipes() {
               </button>
             </form>
 
-            {/* Visa kommentar-knapp */}
+            {/* Visa kommentar-knapp *//*
             <button
               className="mt-4 bg-green-500 text-white py-2 px-4 rounded"
               onClick={() => toggleComments(recipe.id)}>
               {showComments[recipe.id] ? "Dölj kommentarer" : "Visa kommentarer"}
             </button>
 
-            {/* V*isa tidigare kommentarer*/}
+            {/* V*isa tidigare kommentarer*//*
             {showComments[recipe.id] && (
               <>
                 <h3 className="text-xl font-semibold mt-4">Tidigare Kommentarer</h3>
@@ -173,3 +174,4 @@ export default function Recipes() {
     </div>
   );
 }
+*/
