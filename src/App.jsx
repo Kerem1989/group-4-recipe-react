@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Categories from "./components/asidecategories.jsx";
 import RecipeDetails from './components/recipedetails.jsx';
-import Rating from './components/reciperating.jsx';
 
 function App() {
 
