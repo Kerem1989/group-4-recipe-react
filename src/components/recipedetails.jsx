@@ -118,6 +118,16 @@ function RecipeDetails() {
     return <div className="text-center p-4">No recipe found.</div>;
   }
 
+  const getDifficulty = (timeInMins) => {
+    if (timeInMins < 20) {
+      return "Lätt";
+    } else if (timeInMins <= 30) {
+      return "Medel";
+    } else {
+      return "Svårt";
+    }
+  };
+
   return (
       <div className="container mx-auto p-4">
         <div className="flex flex-col lg:flex-row lg:justify-between mb-4 lg:space-x-4">
@@ -125,7 +135,9 @@ function RecipeDetails() {
           <div className="lg:flex-1 lg:mt-12 bg-gray-200 dark:bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col justify-between">
             <h1 className="text-4xl font-extrabold mb-4 dark:text-black">{recipe.title}</h1>
             <p className="text-gray-700 dark:text-gray-400 mb-4">{recipe.description}</p>
+            <p className="text-xl font-semibold mb-4">Tillagningstid: {recipe.timeInMins} minuter</p>
             <p className="text-xl font-semibold mb-4">Pris: {recipe.price} kronor</p>
+            <p className="text-xl font-semibold mb-4">Svårighetsgrad: {getDifficulty(recipe.timeInMins)}</p>
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">Ingredienser</h3>
               <ul className="list-disc list-inside">
@@ -205,8 +217,8 @@ function RecipeDetails() {
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg space-y-2">
                   <div className="flex items-center mb-2">
                     <div>
-                      <h3 className="font-semibold text-lg">{comment.name}</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">{new Date(comment.createdAt).toLocaleDateString()}</p>
+                      <h3 className="font-semibold">{comment.name}</h3>
+                      <p className="text-gray-500 text-sm">{new Date(comment.createdAt).toLocaleString()}</p>
                     </div>
                   </div>
                   <p className="text-gray-700">{comment.comment}</p>
@@ -216,7 +228,5 @@ function RecipeDetails() {
         </section>
       </div>
   );
-
 }
-
 export default RecipeDetails;
