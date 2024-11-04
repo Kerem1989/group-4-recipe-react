@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Categories from "./components/asidecategories.jsx";
 import RecipeDetails from './components/recipedetails.jsx';
+import Rating from './components/reciperating.jsx';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<><Categories /></>} />
+          <Route path="/" element={<><Categories /> </>} />
           <Route path="/recipe/:recipeId" element={<RecipeDetails/>} />
         </Routes>
       </div>
