@@ -6,15 +6,17 @@ import RecipeDetails from './components/recipedetails.jsx';
 function App() {
 
   return (
-    <Router>
+
       <div className="App">
+          <Router>
         <Header />
         <Routes>
           <Route path="/" element={<><Categories /> </>} />
           <Route path="/recipe/:recipeId" element={<RecipeDetails/>} />
         </Routes>
+          </Router>
+
       </div>
-    </Router>
   );
 }
 
