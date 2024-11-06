@@ -83,8 +83,7 @@ const DashboardLayout = () => {
             setRecipes(data);
             const allCategories = new Set(data.flatMap(recipe => recipe.categories));
             let sortedCategories = [...allCategories].sort();
-            // Ensure "Huvudrätt", "Förrätt", "Traditionell", and "Internationell" are at the top
-            const topCategories = ['Huvudrätt', 'Förrätt', 'Traditionellt', 'Internationellt', 'Kött', 'Fisk och Skaldjur', 'Vegetariskt', 'Veganskt', 'Glutenfritt'];
+            const topCategories = ['Huvudrätt', 'Förrätt', 'Husmanskost', 'Internationellt', 'Kött', 'Fisk och Skaldjur', 'Vegetariskt', 'Veganskt', 'Glutenfritt'];
             sortedCategories = sortedCategories.filter(category => !topCategories.includes(category));
             sortedCategories.unshift(...topCategories);
             setCategories(sortedCategories);
