@@ -7,7 +7,7 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="mb-4 relative w-full">
+        <div className="mb-4 w-full">
             <button
                 className="w-full p-2 text-left text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group flex justify-between items-center"
                 onClick={() => setIsOpen(!isOpen)}
@@ -19,12 +19,12 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
                 </svg>
             </button>
             {isOpen && (
-                <ul className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700">
+                <ul className="mt-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg border dark:border-gray-700">
                     {options.map((option, index) => (
                         <li
                             key={index}
                             onClick={() => handleOptionClick(option)}
-                            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2 text-left"
+                            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2 text-left" 
                         >
                             <input
                                 type="checkbox"
@@ -43,7 +43,6 @@ const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) =>
     );
 };
 
-
 const DashboardLayout = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [recipes, setRecipes] = useState([]);
@@ -51,9 +50,12 @@ const DashboardLayout = () => {
     const [categories, setCategories] = useState([]);
     const [selectedTimes, setSelectedTimes] = useState([]);
     const [timeOptions, setTimeOptions] = useState([]);
+    const [selectedDifficulties, setSelectedDifficulties] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
 
-    useEffect(() => {
+    const difficultyOptions = ['Lätt', 'Medel', 'Svårt'];
+
+    /* useEffect(() => {
         fetch('https://recept4-nupar.reky.se/recipes')
             .then(response => {
                 if (!response.ok) {
@@ -65,11 +67,33 @@ const DashboardLayout = () => {
                 setRecipes(data);
                 const allCategories = new Set(data.flatMap(recipe => recipe.categories));
                 setCategories([...allCategories]);
-                const allTimes = new Set(data.map(recipe => recipe.timeInMins));
-                setTimeOptions([...allTimes].sort((a, b) => a - b));
+                const allTimes = new Set(data.map(recipe => `${recipe.timeInMins} mins`));
+                setTimeOptions([...allTimes].sort((a, b) => parseInt(a) - parseInt(b)));
             })
             .catch(error => console.error('Fetching failed: ', error));
-    }, []);
+    }, []); */
+    useEffect(() => {
+    fetch('https://recept4-nupar.reky.se/recipes')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            setRecipes(data);
+            const allCategories = new Set(data.flatMap(recipe => recipe.categories));
+            let sortedCategories = [...allCategories].sort();
+            const topCategories = ['Huvudrätt', 'Förrätt', 'Husmanskost', 'Internationellt', 'Kött', 'Fisk och Skaldjur', 'Vegetariskt', 'Veganskt', 'Glutenfritt'];
+            sortedCategories = sortedCategories.filter(category => !topCategories.includes(category));
+            sortedCategories.unshift(...topCategories);
+            setCategories(sortedCategories);
+            const allTimes = new Set(data.map(recipe => `${recipe.timeInMins} mins`));
+            setTimeOptions([...allTimes].sort((a, b) => parseInt(a) - parseInt(b)));
+        })
+        .catch(error => console.error('Fetching failed: ', error));
+}, []);
+
 
     const handleCategoryClick = (category) => {
         setSelectedCategories(prev =>
@@ -80,6 +104,12 @@ const DashboardLayout = () => {
     const handleTimeClick = (time) => {
         setSelectedTimes(prev =>
             prev.includes(time) ? prev.filter(t => t !== time) : [...prev, time]
+        );
+    };
+
+    const handleDifficultyClick = (difficulty) => {
+        setSelectedDifficulties(prev =>
+            prev.includes(difficulty) ? prev.filter(d => d !== difficulty) : [...prev, difficulty]
         );
     };
 
@@ -97,13 +127,15 @@ const DashboardLayout = () => {
         const matchesCategory = selectedCategories.length === 0 ||
             recipe.categories.some(category => selectedCategories.includes(category));
         const matchesTime = selectedTimes.length === 0 ||
-            selectedTimes.includes(recipe.timeInMins);
+            selectedTimes.includes(`${recipe.timeInMins} mins`);
+        const matchesDifficulty = selectedDifficulties.length === 0 ||
+            selectedDifficulties.includes(getDifficulty(recipe.timeInMins));
         const matchesSearchQuery = !searchQuery ||
             recipe.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
             (recipe.ingredients && recipe.ingredients.some(ingredient =>
                 ingredient.name.toLowerCase().includes(searchQuery.toLowerCase())
             ));
-        return matchesCategory && matchesTime && matchesSearchQuery;
+        return matchesCategory && matchesTime && matchesDifficulty && matchesSearchQuery;
     });
 
     return (
@@ -160,6 +192,12 @@ const DashboardLayout = () => {
                             options={timeOptions}
                             selectedOptions={selectedTimes}
                             handleOptionClick={handleTimeClick}
+                        />
+                        <DropDownList
+                            label="Svårighetsgrad"
+                            options={difficultyOptions}
+                            selectedOptions={selectedDifficulties}
+                            handleOptionClick={handleDifficultyClick}
                         />
                     </div>
                 </aside>
