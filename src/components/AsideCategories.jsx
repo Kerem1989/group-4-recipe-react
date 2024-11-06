@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Hero from "./hero.jsx";
+import Hero from "./Hero.jsx";
 
 const DropDownList = ({ label, options, selectedOptions, handleOptionClick }) => {
     const [isOpen, setIsOpen] = useState(false);

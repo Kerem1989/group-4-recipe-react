@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Hero from './hero.jsx';
-import Categories from './asidecategories.jsx';
+import Hero from './Hero.jsx';
+import Categories from './AsideCategories.jsx';
 import '@testing-library/jest-dom';
 
 test('renders search input', () => {
