@@ -12,5 +12,5 @@ test('renders welcome message on home page', () => {
         </MemoryRouter>
     );
 
-    expect(screen.getByText(/välkomna/i)).toBeInTheDocument(); // Byt ut texten efter vad som visas
+    expect(screen.getByText(/välkomna/i)).toBeInTheDocument();
 });
