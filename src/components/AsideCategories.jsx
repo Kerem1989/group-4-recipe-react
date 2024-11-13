@@ -55,23 +55,6 @@ const DashboardLayout = () => {
 
     const difficultyOptions = ['Lätt', 'Medel', 'Svårt'];
 
-    /* useEffect(() => {
-        fetch('https://recept4-nupar.reky.se/recipes')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setRecipes(data);
-                const allCategories = new Set(data.flatMap(recipe => recipe.categories));
-                setCategories([...allCategories]);
-                const allTimes = new Set(data.map(recipe => `${recipe.timeInMins} mins`));
-                setTimeOptions([...allTimes].sort((a, b) => parseInt(a) - parseInt(b)));
-            })
-            .catch(error => console.error('Fetching failed: ', error));
-    }, []); */
     useEffect(() => {
     fetch('https://recept4-nupar.reky.se/recipes')
         .then(response => {
